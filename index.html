@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up Form</title>
+</head>
+<body>
+  <div class="image-side">
+    <div class="logo">
+      <img src="./images/odin-lined.png" alt="The Odin Project Logo">
+      <h1>Sign-up Form</h1>
+    </div>
+    <div class="image-credit"> Photo by Giordano Rossoni on Unsplash </div>
+  </div>
+  <div  class="registration-side">
+    <div class="registration-text">
+      This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+      <br>
+      <br>
+      You know you want to   
+    </div>
+    <div class="registration-input">
+      <p>Let's do this</p>
+      <div class="registration-input-form">
+      <form  class="input-form">
+        <label for="firstName"> FIRST NAME
+        <input type="text" id="first-name" name="firstName" required>
+        <div id="first-name-error" class="error-input"></div>
+      </label>
+      <label for="LastName"> LAST NAME <input type="text" id="last-name" name="lastName" required>
+        <div id="last-name-error" class="error-input"></div></label>
+      <label for="email">EMAIL <input type="email" id="email" name="email" required autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <div id="email-error" class="error-input"></div></label>
+        <label for="phonenumber">PHONE NUMBER
+          <input type="tel" id="phone-number" name="phonenumber" required
+          pattern="[0-9]{10}">
+          <div id="phone-number-error" class="error-input"></div>
+        </label>
+       
+        <label for="password">PASSWORD
+     <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+      <div id="password-error" class="error-input"></div>    
+    </label>
+
+    <label for="confirmPassword">CONFIRM PASSWORD <input type="password" id="confirm-password" name="confirmPassword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+    <div id="confirm-password-error" class="error-input"></div></label> 
+      </form>
+    </div>
+  </div>
+   <div class="submit-section">
+    <div>
+      <button class="btn btn-primary" type="submit" form="my-form">Create Account</button>
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

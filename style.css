@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Roboto+Serif:wght@200&display=swap');
+:root{
+  --image-credit-text-color: white;
+  --image-credit-text-background-color:black;
+}
+
+
+html,body{
+  margin: 0;
+  padding: 0;
+}  
+
+body{
+  display:flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.image-side{
+  background:url(images/nature.avif);
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40vw;
+  
+  
+}
+.image-credit{
+  
+  position: absolute;
+ bottom:.5rem;
+
+ color: var(--image-credit-text-color);
+ background-color:var(--image-credit-text-background-color);
+}
+.registration-side{
+  
+  background-color: rgb(168, 180, 180);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:start;
+}
+.registration-text{
+  padding:0 1rem;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Fredoka', serif;
+  word-wrap: break-word;
+}
+
+.registration-input{
+  background-color:white;
+  padding: 1.2rem 2vw 4rem 2vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.image-side div{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  padding:0 2vw;
+  background-color: rgba(0, 0, 0, 0.527);
+  line-height: 2rem;
+  width:100%;
+}
+
+form{
+  display: flex;
+  width: 60vw;
+  flex-wrap: wrap;
+  gap: 1rem;
+  row-gap: 3rem;
+}
+
+label{
+  position: relative;
+  width:15rem;
+}
+input{
+  border-radius: 5px;
+  padding:5px 5px;
+  border: 1px solid black;
+}
+
+.submit-section{
+  padding:0 1rem;
+}
+
+.image-side img{
+  width: 5rem;
+  padding: 10px;
+}
+
+h1{
+  color :var(--image-credit-text-color)
+}
+.error-input{
+  font-size:0.7rem;
+  position:absolute;
+  color: red;
+}
